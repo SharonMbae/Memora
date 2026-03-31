@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif&family=Hepta+Slab:wght@500;600&family=Inter:wght@400;500&display=swap");
+@import "tailwindcss";
+
+:root {
+  --page-background: #fdf5f1;
+  --accent-fill: #fde8d8;
+  --accent-fill-hover: #f8dcc8;
+  --button-fill: #343434;
+  --services-background: #feffff;
+  --services-accent: #fef0e2;
+  --services-muted: #8a8a8a;
+  --services-copy: #434343;
+  --testimonial-card: #fcf3ee;
+  --testimonial-heading: #9b816f;
+  --testimonial-copy: #513f3d;
+  --text-primary: #000000;
+  --font-body: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-display: "Hepta Slab", Georgia, serif;
+  font-family: var(--font-body);
+  line-height: 1.5;
+  font-weight: 500;
+  color: var(--text-primary);
+  background-color: var(--page-background);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: var(--page-background);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.landing-page {
+  font-family: var(--font-body);
+  background: #ffffff;
+}
+
+.brand-mark,
+.hero-heading {
+  font-family: var(--font-display);
+}
+
+.hero-description,
+.navigation-link,
+.download-app-link,
+.download-button,
+.download-separator {
+  font-family: var(--font-body);
+}
+
+.hero-description {
+  max-width: 807px;
+}
+
+.device-mockup {
+  display: block;
+  object-fit: contain;
+}
+
+.services-section {
+  color: var(--services-copy);
+}
+
+.feature-media-card img {
+  display: block;
+}
+
+.feature-phone-panel {
+  border-radius: 0;
+}
+
+.feature-phone-visual {
+  margin-top: 43.32px;
+  object-fit: cover;
+}
+
+@media (max-width: 767px) {
+  .navigation-frame {
+    gap: 1.25rem;
+  }
+
+  .navigation-links {
+    gap: 0.25rem;
+  }
+
+  .hero-frame {
+    width: 100%;
+  }
+
+  .action-frame {
+    max-width: 18rem;
+  }
+
+  .service-frame {
+    gap: 1.5rem;
+  }
+
+  .service-copy-frame,
+  .service-text-stack,
+  .service-title,
+  .service-description {
+    max-width: 100%;
+  }
+
+  .feature-media-card,
+  .feature-phone-panel {
+    max-width: 100%;
+  }
+
+  .feature-phone-panel {
+    height: auto;
+    min-height: 23rem;
+  }
+
+  .feature-phone-visual {
+    margin-top: 2rem;
+  }
+
+  .testimonial-quote {
+    font-size: 2rem;
+  }
+}
