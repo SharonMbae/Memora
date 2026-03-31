@@ -97,6 +97,25 @@ select {
   object-fit: cover;
 }
 
+.footer-phone-image {
+  display: block;
+}
+
+.footer-phone-fade {
+  overflow: hidden;
+  mask-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.7) 30%, #000 100%);
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(0, 0, 0, 0.7) 30%,
+    #000 100%
+  );
+}
+
+.footer-wordmark {
+  white-space: nowrap;
+}
+
 @media (max-width: 767px) {
   .navigation-frame {
     gap: 1.25rem;
@@ -141,5 +160,14 @@ select {
 
   .testimonial-quote {
     font-size: 2rem;
+  }
+
+  .footer-wordmark-wrap {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .footer-wordmark {
+    font-size: clamp(4.5rem, 24vw, 9rem);
   }
 }
